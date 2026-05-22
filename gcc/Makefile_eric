@@ -1,0 +1,218 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+################################################################################
+
+
+#Eric_H:026405
+#To skip the ERROR of:
+#In file included from ../Core/Src/UserDefine.c:19:
+#../Core/Inc/UserDefine.h:32:10: fatal error: I2C.h: No such file or directory
+#	   32 | #include <I2C.h>
+#-nostdinc：忽略所有標準系統目錄，只搜尋你用 -I 手動指定的路徑。
+#CFLAGS += -nostdinc
+## 指定交叉編譯器
+CC := arm-none-eabi-gcc
+
+# 設定全局 CFLAGS
+# # -nostdinc: 忽略所有標準系統路徑
+#CFLAGS += -nostdinc
+#
+# # 因為忽略了系統路徑，你必須手動指定 STM32 必要的路徑
+# # 例如 CMSIS, HAL 庫, 以及你的專案標頭檔
+# CFLAGS += -I./Inc
+# CFLAGS += -I./Drivers/CMSIS/Device/ST/STM32F4xx/Include
+# CFLAGS += -I./Drivers/CMSIS/Include
+# CFLAGS += -I./Drivers/STM32F4xx_HAL_Driver/Inc
+
+
+
+-include ../Makefile.init
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include USB_DEVICE/Target/subdir.mk
+-include USB_DEVICE/App/subdir.mk
+-include Middlewares/ST/STM32_USB_Device_Library/Core/Src/subdir.mk
+-include Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/subdir.mk
+-include Drivers/STM32F0xx_HAL_Driver/Src/subdir.mk
+-include Core/Startup/subdir.mk
+-include Core/Src/subdir.mk
+-include objects.mk
+
+#Eric_H:026405
+#objects.list: $(OBJS) $(USER_OBJS)
+#	@echo $(OBJS) $(USER_OBJS) > "objects.list"
+
+#Eric_H:026406
+# 假設你的目標檔變數是 $(OBJECTS)
+# EVK_objects-list: $(OBJECTS)
+# 	$(file >$@,$(OBJECTS))
+
+#Eric_H:026407
+# 1. 包含子目錄定義
+# include source.mk
+# 2. 定義輸出目錄 (通常是 build/ 或 Debug/)
+#BUILD_DIR = build
+BUILD_DIR = ./
+# 3. 搜尋所有子目錄下的 C 與 Assembly 檔案
+# 這裡使用 foreach 遍歷 SUBDIRS，並用 wildcard 找尋原始碼
+#C_SOURCES = $(foreach dir,$(SUBDIRS),$(wildcard $(dir)/*.c))
+C_SOURCES = $(foreach dir,$(SUBDIRS),$(wildcard ../$(dir)/*.c))
+#ASM_SOURCES = $(foreach dir,$(SUBDIRS),$(wildcard $(dir)/*.s))
+ASM_SOURCES = $(foreach dir,$(SUBDIRS),$(wildcard ../$(dir)/*.s))
+# 4. 將 .c/.s 轉化為 .o，並加上編譯路徑前綴
+OBJECTS := $(patsubst .%,%,$(ASM_SOURCES:.s=.o))
+#OBJECTS := $(addprefix $(BUILD_DIR)/,$(notdir $(C_SOURCES:.c=.o)))
+#OBJECTS += $(addprefix $(BUILD_DIR)/,$(C_SOURCES:.c=.o))
+OBJECTS += $(patsubst .%,%,$(C_SOURCES:.c=.o))
+#vpath %.c $(SUBDIRS)
+#OBJECTS += $(addprefix $(BUILD_DIR)/,$(notdir $(ASM_SOURCES:.s=.o)))
+#OBJECTS += $(addprefix $(BUILD_DIR)/,$(ASM_SOURCES:.s=.o))
+#OBJECTS += $(patsubst .%,%,$(ASM_SOURCES:.s=.o))
+#OBJECTS += $(patsubst .%,%,$(ASM_SOURCES:.s=.o))
+#vpath %.s $(SUBDIRS)
+# 5. 定義 objects.list 路徑
+OBJ_LIST = $(BUILD_DIR)/EVK_objects-list
+
+## 在編譯主目標前，先生成 objects.list
+#$(OBJ_LIST): $(OBJECTS) | $(BUILD_DIR)
+#$(OBJ_LIST): $(OBJECTS) # <--- Do NOT put this, or make will call gcc...
+#$(OBJ_LIST): $@ Makefile
+$(OBJ_LIST): $@ $(BUILD_DIR)/Makefile
+#	@echo "Generating $@..."
+	@echo "Generating $(OBJ_LIST)..."
+	@rm -f $@
+#	@for obj in $(OBJECTS); do echo "\"$$obj\"" >> $@; done
+	@$(foreach obj,$(OBJECTS),echo $(obj) >> $@;)
+
+# 確保編譯目錄存在
+#$(BUILD_DIR):
+# 	mkdir -p $@
+
+.PHONY: BD_OBJ_LST
+BD_OBJ_LST: $(OBJ_LIST)
+#	@rm -f $(OBJ_LIST)
+	@echo "Start Build object list"
+
+#.PHONY: BD_OBJ_LST2
+BD_OBJ_LST2:
+	@echo "Generating by BD_OBJ_LST2 $(OBJ_LIST)..."
+##	@mkdir -p $(BUILD_DIR)
+	@rm -f $(OBJ_LIST)
+	@$(foreach obj,$(OBJECTS),echo $(obj) >> $(OBJ_LIST);)
+	@echo "Done."
+
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(S_DEPS)),)
+-include $(S_DEPS)
+endif
+ifneq ($(strip $(S_UPPER_DEPS)),)
+-include $(S_UPPER_DEPS)
+endif
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+endif
+
+-include ../Makefile.defs
+
+OPTIONAL_TOOL_DEPS := \
+$(wildcard ../Makefile.defs) \
+$(wildcard ../Makefile.init) \
+$(wildcard ../Makefile.targets) \
+
+
+#Eric_H:026419 Clone RDP1000X to ECX343EN
+BUILD_ARTIFACT_NAME := EVK-STM32F103C6_LT6911C_ECX343EN-V01
+BUILD_ARTIFACT_EXTENSION := elf
+BUILD_ARTIFACT_PREFIX :=
+BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
+
+# Add inputs and outputs from these tool invocations to the build variables 
+EXECUTABLES += \
+EVK-STM32F103C6_LT6911C_ECX343EN-V01.elf \
+
+MAP_FILES += \
+EVK-STM32F103C6_LT6911C_ECX343EN-V01.map \
+
+SIZE_OUTPUT += \
+default.size.stdout \
+
+OBJDUMP_LIST += \
+EVK-STM32F103C6_LT6911C_ECX343EN-V01.list \
+
+OBJCOPY_HEX += \
+EVK-STM32F103C6_LT6911C_ECX343EN-V01.hex \
+
+
+# All Target
+all: main-build
+
+# Main-build Target
+main-build: EVK-STM32F103C6_LT6911C_ECX343EN-V01.elf secondary-outputs
+
+# Tool invocations
+#EVK-STM32F103C6_LT6911C_RDP1000X-V01.elf EVK-STM32F103C6_LT6911C_RDP1000X-V01.map: $(OBJS) $(USER_OBJS) D:\KTNT\Project\ULT\1.03\EVK\EVK-STM32F103C6_LT6911C_RDP1000X\STM32F072CBTX_FLASH.ld Makefile objects.list $(OPTIONAL_TOOL_DEPS)
+#Eric_H:026405
+#EVK-STM32F103C6_LT6911C_RDP1000X-V01.elf EVK-STM32F103C6_LT6911C_RDP1000X-V01.map: $(OBJS) $(USER_OBJS) ./STM32F072CBTX_FLASH.ld Makefile objects.list $(OPTIONAL_TOOL_DEPS)
+#Eric_H:026406
+EVK-STM32F103C6_LT6911C_ECX343EN-V01.elf EVK-STM32F103C6_LT6911C_ECX343EN-V01.map: $(OBJS) $(USER_OBJS) ./STM32F072CBTX_FLASH.ld Makefile EVK_objects-list $(OPTIONAL_TOOL_DEPS)
+
+#	arm-none-eabi-gcc -o "EVK-STM32F103C6_LT6911C_RDP1000X-V01.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"D:\KTNT\Project\ULT\1.03\EVK\EVK-STM32F103C6_LT6911C_RDP1000X\STM32F072CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EVK-STM32F103C6_LT6911C_RDP1000X-V01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+#Eric_H:026405
+#	$(CC) $(CFLAGS) -o "EVK-STM32F103C6_LT6911C_RDP1000X-V01.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"./STM32F072CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EVK-STM32F103C6_LT6911C_RDP1000X-V01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+#Eric_H:026406
+#@"EVK_objects-list" --> It is "Response Files" format...
+#在Makefile中"@"符號出現在參數中間（例如 gcc -o "Target.elf" @"filename"），這與出現在行首（隱藏指令輸出）的作用完全不同。
+#這被稱為「回應檔」（Response Files）或「參數檔」機制。
+#意義： @filename 告訴編譯器（如 GCC、Clang 或 Linker）：「去打開這個名為 filename 的檔案，把裡面的內容讀出來，當作是命令行參數的一部分。」
+#作用： 主要是為了解決**「命令行長度限制」**的問題。
+#使用 @ 符號可以將長長的參數列表「封裝」進一個文字檔中，讓指令保持簡短。
+	$(CC) $(CFLAGS) -o "EVK-STM32F103C6_LT6911C_ECX343EN-V01.elf" @EVK_objects-list $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"./STM32F072CBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EVK-STM32F103C6_LT6911C_ECX343EN-V01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+#default.size.stdout: $(EXECUTABLES) Makefile objects.list $(OPTIONAL_TOOL_DEPS)
+#Eric_H:026406
+default.size.stdout: $(EXECUTABLES) Makefile EVK_objects-list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-size  $(EXECUTABLES)
+	@echo 'Finished building: $@'
+	@echo ' '
+
+#EVK-STM32F103C6_LT6911C_RDP1000X-V01.list: $(EXECUTABLES) Makefile objects.list $(OPTIONAL_TOOL_DEPS)
+#Eric_H:026406
+EVK-STM32F103C6_LT6911C_ECX343EN-V01.list: $(EXECUTABLES) Makefile EVK_objects-list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "EVK-STM32F103C6_LT6911C_ECX343EN-V01.list"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+#EVK-STM32F103C6_LT6911C_RDP1000X-V01.hex: $(EXECUTABLES) Makefile objects.list $(OPTIONAL_TOOL_DEPS)
+#Eric_H:026406
+EVK-STM32F103C6_LT6911C_ECX343EN-V01.hex: $(EXECUTABLES) Makefile EVK_objects-list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "EVK-STM32F103C6_LT6911C_ECX343EN-V01.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+# Other Targets
+clean:
+#	-$(RM) EVK-STM32F103C6_LT6911C_RDP1000X-V01.elf EVK-STM32F103C6_LT6911C_RDP1000X-V01.hex EVK-STM32F103C6_LT6911C_RDP1000X-V01.list EVK-STM32F103C6_LT6911C_RDP1000X-V01.map default.size.stdout
+#Eric_H:026607
+	-$(RM) EVK-STM32F103C6_LT6911C_ECX343EN-V01.elf EVK-STM32F103C6_LT6911C_ECX343EN-V01.hex EVK-STM32F103C6_LT6911C_ECX343EN-V01.list EVK-STM32F103C6_LT6911C_ECX343EN-V01.map default.size.stdout $(BUILD_DIR)/EVK_objects-list
+	-@echo ' '
+
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
+
+fail-specified-linker-script-missing:
+	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'
+	@exit 2
+
+warn-no-linker-script-specified:
+	@echo 'Warning: No linker script specified. Check the linker settings in the build configuration.'
+
+.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified
+
+-include ../Makefile.targets
