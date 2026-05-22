@@ -62,7 +62,7 @@
   * @brief Private defines.
   * @{
   */
-
+//USB描述符：VID=0x0483(ST), PID=0x5740, 产品名"STM32 Virtual ComPort"
 #define USBD_VID     1155
 #define USBD_LANGID_STRING     1033
 #define USBD_MANUFACTURER_STRING     "STMicroelectronics"
