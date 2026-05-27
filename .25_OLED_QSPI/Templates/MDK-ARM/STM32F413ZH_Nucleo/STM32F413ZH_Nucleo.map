@@ -9588,12 +9588,6 @@ Removing Unused input sections from the image.
     Removing qspi.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
     Removing qspi.o(.ARM.exidx.text.OUTLINED_FUNCTION_1), (8 bytes).
     Removing qspi.o(.ARM.exidx.text.OUTLINED_FUNCTION_2), (8 bytes).
-    Removing qspi.o(.data.cd36), (5 bytes).
-    Removing qspi.o(.data.cdAA2), (5 bytes).
-    Removing qspi.o(.data.cd10), (5 bytes).
-    Removing qspi.o(.data.cd28), (5 bytes).
-    Removing qspi.o(.data.cdF0), (6 bytes).
-    Removing qspi.o(.data.cdF1), (7 bytes).
     Removing dadd.o(.text), (334 bytes).
     Removing dmul.o(.text), (228 bytes).
     Removing f2d.o(.text), (38 bytes).
@@ -9606,7 +9600,7 @@ Removing Unused input sections from the image.
     Removing dfltui.o(.text), (26 bytes).
     Removing dfixi.o(.text), (62 bytes).
 
-3921 unused section(s) (total 183123 bytes) removed from the image.
+3915 unused section(s) (total 183090 bytes) removed from the image.
 
 ==============================================================================
 
@@ -10280,21 +10274,21 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x000001d8   Data   RO           73    RESET               startup_stm32f413xx.o
-    0x080001d8   0x080001d8   0x00000000   Code   RO         4482  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x080001d8   0x080001d8   0x00000004   Code   RO         4541    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x080001dc   0x080001dc   0x00000004   Code   RO         4544    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x080001e0   0x080001e0   0x00000000   Code   RO         4546    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x080001e0   0x080001e0   0x00000000   Code   RO         4548    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x080001e0   0x080001e0   0x00000008   Code   RO         4549    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x080001e8   0x080001e8   0x00000000   Code   RO         4551    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x080001e8   0x080001e8   0x00000000   Code   RO         4553    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x080001e8   0x080001e8   0x00000004   Code   RO         4542    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x080001d8   0x080001d8   0x00000000   Code   RO         4476  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080001d8   0x080001d8   0x00000004   Code   RO         4535    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080001dc   0x080001dc   0x00000004   Code   RO         4538    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080001e0   0x080001e0   0x00000000   Code   RO         4540    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080001e0   0x080001e0   0x00000000   Code   RO         4542    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080001e0   0x080001e0   0x00000008   Code   RO         4543    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080001e8   0x080001e8   0x00000000   Code   RO         4545    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x080001e8   0x080001e8   0x00000000   Code   RO         4547    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x080001e8   0x080001e8   0x00000004   Code   RO         4536    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x080001ec   0x080001ec   0x00000024   Code   RO           74    .text               startup_stm32f413xx.o
-    0x08000210   0x08000210   0x00000062   Code   RO         4485    .text               mc_w.l(uldiv.o)
-    0x08000272   0x08000272   0x00000024   Code   RO         4487    .text               mc_w.l(memseta.o)
-    0x08000296   0x08000296   0x0000001e   Code   RO         4555    .text               mc_w.l(llshl.o)
-    0x080002b4   0x080002b4   0x00000020   Code   RO         4557    .text               mc_w.l(llushr.o)
-    0x080002d4   0x080002d4   0x00000030   Code   RO         4585    .text               mc_w.l(init.o)
+    0x08000210   0x08000210   0x00000062   Code   RO         4479    .text               mc_w.l(uldiv.o)
+    0x08000272   0x08000272   0x00000024   Code   RO         4481    .text               mc_w.l(memseta.o)
+    0x08000296   0x08000296   0x0000001e   Code   RO         4549    .text               mc_w.l(llshl.o)
+    0x080002b4   0x080002b4   0x00000020   Code   RO         4551    .text               mc_w.l(llushr.o)
+    0x080002d4   0x080002d4   0x00000030   Code   RO         4579    .text               mc_w.l(init.o)
     0x08000304   0x08000304   0x00000002   Code   RO           19    .text.BusFault_Handler  stm32f4xx_it.o
     0x08000306   0x08000306   0x00000002   PAD
     0x08000308   0x08000308   0x0000000c   Code   RO           33    .text.DMA2_Stream7_IRQHandler  stm32f4xx_it.o
@@ -10411,9 +10405,9 @@ Memory Map of the image
     0x080020b4   0x080020b4   0x00000050   Code   RO         4389    .text.qspi_instruct  quadspi.o
     0x08002104   0x08002104   0x0000003c   Code   RO         4391    .text.qspi_send_message  quadspi.o
     0x08002140   0x08002140   0x0000039c   Code   RO         4238    .text.sight_replace  dis.o
-    0x080024dc   0x080024dc   0x0000000e   Code   RO         4597    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x080024ea   0x080024ea   0x00000002   Code   RO         4598    i.__scatterload_null  mc_w.l(handlers.o)
-    0x080024ec   0x080024ec   0x0000000e   Code   RO         4599    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080024dc   0x080024dc   0x0000000e   Code   RO         4591    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x080024ea   0x080024ea   0x00000002   Code   RO         4592    i.__scatterload_null  mc_w.l(handlers.o)
+    0x080024ec   0x080024ec   0x0000000e   Code   RO         4593    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x080024fa   0x080024fa   0x00000010   Data   RO           62    .rodata.AHBPrescTable  system_stm32f4xx.o
     0x0800250a   0x0800250a   0x00013ee7   Data   RO         4276    .rodata.dis_logo    dis.o
     0x080163f1   0x080163f1   0x00007e90   Data   RO         4277    .rodata.dis_type_1  dis.o
@@ -10429,7 +10423,7 @@ Memory Map of the image
     0x0804de1c   0x0804de1c   0x00000169   Data   RO         4287    .rodata.dis_type_7  dis.o
     0x0804df85   0x0804df85   0x00000169   Data   RO         4288    .rodata.dis_type_8  dis.o
     0x0804e0ee   0x0804e0ee   0x00000002   PAD
-    0x0804e0f0   0x0804e0f0   0x00000020   Data   RO         4596    Region$$Table       anon$$obj.o
+    0x0804e0f0   0x0804e0f0   0x00000020   Data   RO         4590    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x0804e110, Size: 0x0004b590, Max: 0x00050000, ABSOLUTE)
@@ -10437,7 +10431,7 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000000   0x0804e110   0x00000008   Data   RW         1798    .data..L_MergedGlobals  stm32f4xx_hal.o
-    0x20000008   0x0804e118   0x0000005c   Data   RW         4450    .data..L_MergedGlobals  qspi.o
+    0x20000008   0x0804e118   0x0000005c   Data   RW         4444    .data..L_MergedGlobals  qspi.o
     0x20000064   0x0804e174   0x00000004   Data   RW           61    .data.SystemCoreClock  system_stm32f4xx.o
     0x20000068        -       0x00000010   Zero   RW         4315    .bss..L_MergedGlobals  dis.o
     0x20000078        -       0x00000004   Zero   RW         4370    .bss..L_MergedGlobals  gpio.o
@@ -10463,7 +10457,7 @@ Image component sizes
       1632        156     310244          0     307224      12486   dis.o
        778         28          0          0          4       5526   gpio.o
        212         16          0          0         84       4153   main.o
-       530         24          0         92          0       3092   qspi.o
+       530         24          0         92          0       2969   qspi.o
        628         40          0          0        173      10105   quadspi.o
         36          8        472          0       1024        908   startup_stm32f413xx.o
        176         16          0          8          4       7959   stm32f4xx_hal.o
@@ -10478,7 +10472,7 @@ Image component sizes
         76         16         16          4          0       2978   system_stm32f4xx.o
 
     ----------------------------------------------------------------------
-      8700        456     310766        104     308520     115067   Object Totals
+      8700        456     310766        104     308520     114944   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         22          0          2          0          7          0   (incl. Padding)
 
@@ -10521,8 +10515,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      8994        474     310766        104     308520     115271   Grand Totals
-      8994        474     310766        104     308520     115271   ELF Image Totals
+      8994        474     310766        104     308520     115148   Grand Totals
+      8994        474     310766        104     308520     115148   ELF Image Totals
       8994        474     310766        104          0          0   ROM Totals
 
 ==============================================================================
