@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\vs_community\\work\\Test_File\\file_test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F59DE90A-3E80-4023-AB48-18E3805D5762}|file_test\\file_test.csproj|d:\\vs_community\\work\\test_file\\file_test\\file_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F59DE90A-3E80-4023-AB48-18E3805D5762}|file_test\\file_test.csproj|solutionrelative:file_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F59DE90A-3E80-4023-AB48-18E3805D5762}|file_test\\file_test.csproj|d:\\vs_community\\work\\test_file\\file_test\\file_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F59DE90A-3E80-4023-AB48-18E3805D5762}|file_test\\file_test.csproj|solutionrelative:file_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\vs_community\\work\\Test_File\\file_test\\file_test\\Form1.cs",
+              "RelativeDocumentMoniker": "file_test\\Form1.cs",
+              "ToolTip": "D:\\vs_community\\work\\Test_File\\file_test\\file_test\\Form1.cs",
+              "RelativeToolTip": "file_test\\Form1.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAApwFcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-30T05:27:31.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\vs_community\\work\\Test_File\\file_test\\file_test\\Form1.cs",
+              "RelativeDocumentMoniker": "file_test\\Form1.cs",
+              "ToolTip": "D:\\vs_community\\work\\Test_File\\file_test\\file_test\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "file_test\\Form1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-30T05:26:32.416Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
