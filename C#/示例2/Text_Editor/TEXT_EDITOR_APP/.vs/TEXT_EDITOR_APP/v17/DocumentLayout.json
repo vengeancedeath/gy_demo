@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|d:\\vs_community\\work\\text_editor\\text_editor_app\\text_editor_app\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|solutionrelative:text_editor_app\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|d:\\vs_community\\work\\text_editor\\text_editor_app\\text_editor_app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|solutionrelative:text_editor_app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|d:\\vs_community\\work\\text_editor\\text_editor_app\\text_editor_app\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|solutionrelative:text_editor_app\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|d:\\vs_community\\work\\text_editor\\text_editor_app\\text_editor_app\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|solutionrelative:text_editor_app\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|d:\\vs_community\\work\\text_editor\\text_editor_app\\text_editor_app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|solutionrelative:text_editor_app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|d:\\vs_community\\work\\text_editor\\text_editor_app\\text_editor_app\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{221A0C0F-4F46-4CC7-BC1A-1EBB1EDB0BAA}|TEXT_EDITOR_APP\\TEXT_EDITOR_APP.csproj|solutionrelative:text_editor_app\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form3.cs",
+              "RelativeDocumentMoniker": "TEXT_EDITOR_APP\\Form3.cs",
+              "ToolTip": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form3.cs",
+              "RelativeToolTip": "TEXT_EDITOR_APP\\Form3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-30T01:11:56.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form2.cs",
+              "RelativeDocumentMoniker": "TEXT_EDITOR_APP\\Form2.cs",
+              "ToolTip": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form2.cs",
+              "RelativeToolTip": "TEXT_EDITOR_APP\\Form2.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAlwCsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-30T01:11:49.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form1.cs",
+              "RelativeDocumentMoniker": "TEXT_EDITOR_APP\\Form1.cs",
+              "ToolTip": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form1.cs",
+              "RelativeToolTip": "TEXT_EDITOR_APP\\Form1.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-30T01:11:12.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form3.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form3.cs",
+              "RelativeDocumentMoniker": "TEXT_EDITOR_APP\\Form3.cs",
+              "ToolTip": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form3.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TEXT_EDITOR_APP\\Form3.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T09:00:00.172Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form2.cs",
+              "RelativeDocumentMoniker": "TEXT_EDITOR_APP\\Form2.cs",
+              "ToolTip": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form2.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TEXT_EDITOR_APP\\Form2.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T08:59:53.79Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form1.cs",
+              "RelativeDocumentMoniker": "TEXT_EDITOR_APP\\Form1.cs",
+              "ToolTip": "D:\\vs_community\\work\\Text_Editor\\TEXT_EDITOR_APP\\TEXT_EDITOR_APP\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "TEXT_EDITOR_APP\\Form1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T08:24:50.896Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

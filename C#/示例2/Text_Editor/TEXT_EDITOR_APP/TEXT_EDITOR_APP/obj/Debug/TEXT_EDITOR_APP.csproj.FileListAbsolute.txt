@@ -1,0 +1,13 @@
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\bin\Debug\TEXT_EDITOR_APP.exe.config
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\bin\Debug\TEXT_EDITOR_APP.exe
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\bin\Debug\TEXT_EDITOR_APP.pdb
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\obj\Debug\TEXT_EDITOR_APP.csproj.AssemblyReference.cache
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\obj\Debug\TEXT_EDITOR_APP.Form1.resources
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\obj\Debug\TEXT_EDITOR_APP.Form2.resources
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\obj\Debug\TEXT_EDITOR_APP.Form3.resources
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\obj\Debug\TEXT_EDITOR_APP.Properties.Resources.resources
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\obj\Debug\TEXT_EDITOR_APP.csproj.GenerateResource.cache
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\obj\Debug\TEXT_EDITOR_APP.csproj.CoreCompileInputs.cache
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\obj\Debug\TEXT_EDITOR_APP.exe
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\obj\Debug\TEXT_EDITOR_APP.pdb
+D:\vs_community\work\Text_Editor\TEXT_EDITOR_APP\TEXT_EDITOR_APP\obj\Debug\TEXT_EDITOR_APP.exe.config
